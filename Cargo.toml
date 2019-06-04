@@ -1,0 +1,26 @@
+[package]
+name = "linux"
+version = "0.0.1"
+authors = ["mahkoh"]
+edition = "2018"
+
+[workspace]
+members = [
+    "macros",
+]
+
+[features]
+default = [
+    "std",
+    "retry-interrupted"
+]
+std = []
+retry-interrupted = []
+
+[dependencies]
+linux-macros = { version = "0.0.1", path = "macros" }
+memchr = { version = "2.2", default-features = false }
+
+[[bin]]
+name = "test"
+path = "src/bin/test1.rs"
