@@ -19,3 +19,5 @@ pub mod fd;
 pub mod result;
 pub mod lmem;
 pub mod time;
+pub mod string;
+pub mod parse;

@@ -3,6 +3,8 @@ name = "linux"
 version = "0.0.1"
 authors = ["mahkoh"]
 edition = "2018"
+description = "todo"
+license = "MPL-2.0"
 
 [workspace]
 members = [
